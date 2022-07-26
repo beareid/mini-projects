@@ -1,0 +1,91 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --clr-black: #222;
+  --clr-white: #fff;
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+h1 {
+  font-family: var(--ff-primary);
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
+}
+
+/*
+=============== 
+Counter
+===============
+*/
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+}
+#value {
+  font-size: 6rem;
+  font-weight: bold;
+}
+.btn {
+  background: transparent;
+  border: 2px solid var(--clr-black);
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  color: var(--clr-black);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875rem;
+  letter-spacing: 0.1rem;
+  margin: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
