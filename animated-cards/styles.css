@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*, *::before, *::after {
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --color: hsl(200, 50%, 50%);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #777;
+  border-radius: .25rem;
+}
+
+.card.card-shadow {
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.card-header {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.card-body {
+  font-size: .9rem;
+}
+
+.card-footer {
+  margin-top: 1rem;
+}
+
+.btn {
+  background: var(--color);
+  border: none;
+  border-radius: .25em;
+  color: white;
+  cursor: pointer;
+  /* Using em causes the padding to scale with the font size */
+  padding: .5em .75em;
+}
+
+.btn:hover, .btn:focus {
+  background: hsl(200, 50%, 60%);
+}
+
+.btn.btn-outline {
+  background: none;
+  border: 1px solid var(--color);
+  color: var(--color);
+}
+
+.btn.btn-outline {
+  background: none;
+  border: 1px solid var(--color);
+  color: var(--color);
+}
+
+.btn.btn-outline:hover, .btn.btn-outline:focus {
+  background: hsl(200, 50%, 90%);
+}
+
+.btn + .btn {
+  margin-left: .25rem;
+}
