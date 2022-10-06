@@ -1,0 +1,56 @@
+/* Variables */
+:root {
+  --primary: #1B2F33;
+  --business: #8C7051;
+  --personal: var(var(--primary));
+  --light: #EEE;
+  --grey: #888;
+  --darK: #313154;
+  --danger: #EF3054;
+
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  --personal-glow: 0px 0px 3px rgba(26, 46, 50, 0.75);
+  --business-glow: 0px 0px 3px rgba(140, 112, 81, 0.75);
+}
+
+/* General Styles */
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: initial;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+
+section {
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+}
+
+h3 {
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  color: var(--grey);
+  font-size: 0.87rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
