@@ -9,6 +9,7 @@ window.addEventListener('load', () => {
     // Set the value of username (name of the key you want to create/update) in local storage to the value of nameInput
     localStorage.setItem('username', event.target.value);
   });
+  
   // Get the value of username from the local storage
   const username = localStorage.getItem('username') || '';
   // Assign the value of nameInput to username
